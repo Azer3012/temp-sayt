@@ -1,0 +1,303 @@
+@import mixin.sass
+@import colors.sass
+.head-box
+    display: flex
+#carouselExampleIndicators
+    width: 75%
+    margin-left: 25%
+    @media ( max-width: 678px ) 
+        margin-left: 0
+        width: 100%
+
+    
+    .carousel
+        background: black
+        height: 500px
+        display: flex
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        .carousel-head
+            color: white
+            text-transform: uppercase
+            padding: 10px 0
+            animation-name: fadeInDown  
+            animation-duration: 1s
+        .carousel-text
+            color: white
+            text-transform: capitalize
+            padding: 10px 0
+            animation-name: fadeInDown 
+            animation-duration: 1s
+        .carousel-link
+            display: flex
+            .carousel-links1
+                padding: 15px
+                background: #424db1
+                color: white
+                margin-right: 5px
+                text-decoration: none
+                text-transform: uppercase
+                transition: all 0.5s
+                &:hover
+                    opacity: 0.7
+                i
+                    margin-right: 2px
+            .carousel-links2
+                padding: 15px
+                background: #ffffff
+                color: black
+                text-decoration: none
+                text-transform: uppercase
+                transition: all 0.5s
+                &:hover
+                    opacity: 0.7
+
+
+.menu-block
+    width: 25%
+    position: fixed
+    height: 100vh
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    
+    
+    
+
+        
+    
+    .head
+        text-align: center
+        text-transform: uppercase
+        font-weight: 500
+        font-size: 50px
+        padding: 20px 0
+    .menu
+        display: flex
+        flex-direction: column
+        align-items: center
+        .menu-items
+            margin-bottom: 5px
+           
+            .menu-links
+                font-size: 22px
+                text-transform: uppercase
+                text-decoration: none
+                margin-bottom: 5px
+                color: black
+                
+                    
+    .undermenu
+        text-align: center
+        p
+            text-transform: capitalize
+        
+        
+       
+        .under
+            display: flex
+            justify-content: center
+            align-items: center 
+            .under-items
+                &:hover
+                    animation-name: pulse
+                    animation-duration: 2s
+
+                .under-links
+                    color: gray
+                    margin: 10px
+                
+.actives
+    text-decoration: underline !important
+    
+
+.service
+    margin-left: 25%
+    padding: 30px 0
+    text-transform: uppercase
+    font-size: 22px
+.row
+    margin-left: 25%
+    @media ( max-width: 678px ) 
+        margin-left: 0
+    
+.tools
+    margin-bottom: 20px
+    margin-right: 5px
+    animation-name: slideInLeft
+    animation-duration: 0.8s
+    .text
+        display: flex
+        align-items: center
+        align-items: center
+        justify-content: center
+        
+        .icon
+            background: #a7a7a7fd
+            width: 120px
+            height: 120px
+            border-radius: 50%
+            min-width: 120px
+            display: flex
+            align-items: center
+            justify-content: center
+            i 
+                font-size: 50px
+                color: #205294
+        .text-icon
+            margin-left: 15px
+            .text-head
+                text-transform: uppercase
+                font-size: 18px
+            .words
+                font-size: 16px
+            
+.card
+    animation-name: slideInLeft
+    animation-duration: 0.8s
+    .card-image1
+        background: $first
+        padding: 80px
+    .card-image2
+        background: $second
+        padding: 80px 
+    .card-image3
+        background: $third
+        padding: 80px
+    .card-image4
+        background: $fourth
+        padding: 80px   
+    .card-title
+        text-transform: uppercase
+        font-size: 14px
+    .card-body
+        padding: 5px
+        
+    .card-links
+        color: black
+        text-decoration: none
+        text-transform: uppercase
+        i
+            margin-left: 5px
+.row
+    .col-lg-3
+        margin-bottom: 10px
+
+.underpage
+    margin-left: 25% 
+    margin-top: 60px
+    animation-name: slideInLeft
+    animation-duration: 0.8s
+    @media ( max-width: 678px ) 
+        margin-left: 0
+    
+    .underpage-title
+        color: #285f5f
+        text-transform: uppercase
+        font-size: 22px
+    .underpage-link
+        text-decoration: none
+        text-transform: uppercase   
+        background:  #285f5f 
+        color: white
+        padding: 8px 
+    
+.overlay1
+    background:  $first
+.overlay2
+    background: $second
+.overlay3
+    background: $third
+.overlay4
+    background: $fourth
+.overlay-item
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    cursor: pointer
+    opacity: 0
+    padding: 40px 0
+    &:hover
+        opacity: 1
+        background: #dddddd
+    &:hover
+        .overlay-text
+            animation-name: bounceInUp
+            animation-duration: 1s
+        .overlay-title
+            animation-name: fadeInDown
+            animation-duration: 1s
+
+        
+    .overlay-title
+        text-transform: uppercase
+        font-size: 18px
+    .overlay-text
+        font-size: 14px
+.empty
+    background: $third
+    padding: 150px 0
+    margin-top: 20px
+.about
+    margin-top: 20px
+    .about-title
+        text-transform: uppercase  
+        font-size: 22px
+.padding
+    padding: 30px 0
+
+
+
+.form-title
+    margin-left: 25%
+    text-transform: uppercase
+form
+    display: flex
+    justify-content: flex-start
+    
+    .input
+        
+        display: flex
+        flex-direction: column
+        margin-right: 10px
+        input
+            margin-bottom: 5px
+    .textarea
+        
+        textarea
+            width: 100%
+    .button
+        button
+            padding: 5px
+            background: $button
+            color: white
+            text-transform: uppercase
+            border: 1px solid $button
+            border-radius: 2px
+
+     
+.menu-block
+    @media ( max-width: 678px ) 
+        display: none
+
+
+.openmenu
+    color: red
+    cursor: pointer
+    @media ( min-width: 678px ) 
+        display: none
+    .bars
+        font-size: 50px     
+    
+    
+        
+    
+
+                
+       
+    
+    
+    
+    
